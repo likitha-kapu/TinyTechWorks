@@ -1,1 +1,2 @@
-# TinyTechWorks
+🌟 TinyTechWorks💡
+Welcome to TinyTechWorks, a curated collection of bite-sized projects that showcase my passion for coding and creativity! Here, I experiment with HTML, CSS, and JavaScript to build interactive features, sleek designs, and practical applications. These projects are stepping stones in my journey to refine my development skills and explore new ideas. Keep an eye out for exciting updates as I grow and evolve as a tech enthusiast! 🚀
