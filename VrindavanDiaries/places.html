@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         .places-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .places-section h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #2C3E50;
+            text-transform: uppercase;
+        }
+
+        .places-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .place-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .place-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .place-card img {
+            width: 93%;
+            height: 315px;
+            object-fit: cover;
+            border-radius: 13%;
+        }
+
+        .place-card-content {
+            padding: 20px;
+        }
+
+        .place-card h3 {
+            font-size: 24px;
+            margin: 0 0 10px;
+            color: #2C3E50;
+        }
+
+        .place-card p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="photos/headingimg.jpg" alt="">
+        <H1>
+            <center>VRINDAVAN DIARIES</center>
+        </H1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="places-section" id="places">
+        <h2>Explore Sacred Places in Vrindavan</h2>
+        <div class="places-container">
+            <!-- Place 1 -->
+            <div class="place-card">
+                <img src="photos/bankebihari.jpg" alt="Banke Bihari Temple">
+                <div class="place-card-content">
+                    <h3>Banke Bihari Temple</h3>
+                    <p>One of the most revered temples dedicated to Lord Krishna, known for its stunning architecture and vibrant rituals.</p>
+                </div>
+            </div>
+
+            <!-- Place 2 -->
+            <div class="place-card">
+                <img src="photos/iskcon.jpg" alt="ISKCON Temple">
+                <div class="place-card-content">
+                    <h3>ISKCON Temple</h3>
+                    <p>A serene place filled with devotional chants and beautiful deities of Radha and Krishna.</p>
+                </div>
+            </div>
+
+            <!-- Place 3 -->
+            <div class="place-card">
+                <img src="photos/Sevakunj.jpg" alt="Seva Kunj">
+                <div class="place-card-content">
+                    <h3>Seva Kunj</h3>
+                    <p>Believed to be the place where Krishna performed Raas Leela with Radha and the Gopis.</p>
+                </div>
+            </div>
+
+            <!-- Place 4 -->
+            <div class="place-card">
+                <img src="photos/premmandir.jpg" alt="Prem Mandir">
+                <div class="place-card-content">
+                    <h3>Prem Mandir</h3>
+                    <p>An architectural marvel that depicts scenes from Lord Krishna's life with detailed carvings and lighting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

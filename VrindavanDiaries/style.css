@@ -1,0 +1,119 @@
+
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .top {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #2C3E50;
+            padding: 0 20px;
+            /* Add padding to give some space on the sides */
+            box-sizing: border-box;
+        }
+
+        img {
+            border-radius: 100%;
+            height: 95px;
+            /* Set a specific height for better layout control */
+            width: 137px;
+            /* Set a matching width */
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+            flex-grow: 1;
+            /* Allows the heading to take up available space */
+            margin: 0;
+            font-size: 50px;
+        }
+
+
+        .nav {
+            background-color: #34495E;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .nav a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 33px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #445fd9;
+            border-radius: 5px;
+        }
+
+
+        .hero {
+            flex-grow: 1;
+            height: 500px;
+            background-image: url('photos/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: aliceblue;
+            position: relative;
+            margin: 0px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); 
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .explore-btn {
+            background-color: #1ABC9C;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-btn:hover {
+            background-color: #16A085;
+        }
+    

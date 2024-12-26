@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #34495E;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #34495E;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item h3 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .btn-back {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #1ABC9C;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn-back:hover {
+            background-color: #16A085;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="photos/headingimg.jpg" alt="Vrindavan Diaries">
+        <h1>
+            <center>VRINDAVAN DIARIES</center>
+        </h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="gallery-container">
+        <h2>Vrindavan Gallery</h2>
+
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <img src="photos/image1.jpg" alt="Vrindavan Image 1">
+                <h3>Temple View</h3>
+            </div>
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <img src="photos/image2.jpg" alt="Vrindavan Image 2">
+                <h3>Beautiful Sunset</h3>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <img src="photos/image3.jpg" alt="Vrindavan Image 3">
+                <h3>River Yamuna</h3>
+            </div>
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <img src="photos/image4.jpg" alt="Vrindavan Image 4">
+                <h3>Temple Devotees</h3>
+            </div>
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+                <img src="photos/image5.jpg" alt="Vrindavan Image 5">
+                <h3>Krishna's Abode</h3>
+            </div>
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+                <img src="photos/image6.jpg" alt="Vrindavan Image 6">
+                <h3>Spiritual Vibes</h3>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn-back">Back to Home</a>
+    </div>
+</body>
+</html>
